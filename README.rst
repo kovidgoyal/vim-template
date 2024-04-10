@@ -92,7 +92,7 @@ The following variables will be expanded in templates:
     Host name.
 ``%GUARD%``
     A string with alphanumeric characters and underscores, suitable for use
-    in proprocessor guards for C/C++/Objective-C header files.
+    in preprocessor guards for C/C++/Objective-C header files.
 ``%HERE%``
     Expands to nothing, but ensures that the cursor will be placed in its
     position after expanding the template.
