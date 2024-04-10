@@ -99,6 +99,7 @@ function <SID>TExpandVars()
 	let l:filen = expand("%:t:r")
 	let l:filex = expand("%:e")
 	let l:filec = expand("%:t")
+    let l:fdir  = expand("%:p:h:t")
 	let l:hostn = hostname()
 	let l:user  = exists("g:username") ? g:username :
 				\ (exists("g:user") ? g:user : $USER)
@@ -114,6 +115,7 @@ function <SID>TExpandVars()
 	call <SID>TExpand("FDATE", l:fdate)
 	call <SID>TExpand("MONTH", l:month)
 	call <SID>TExpand("FILE",  l:filen)
+	call <SID>TExpand("DIR",   l:fdir)
 	call <SID>TExpand("FFILE", l:filec)
 	call <SID>TExpand("EXT",   l:filex)
 	call <SID>TExpand("MAIL",  l:email)
@@ -198,4 +200,3 @@ command -nargs=1 -complete=file Template call <SID>TLoadCmd("<args>")
 
 
 " vim: fdm=marker
-

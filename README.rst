@@ -80,6 +80,8 @@ The following variables will be expanded in templates:
     File name, without extension.
 ``%FFILE%``
     File name, with extension.
+``%DIR%``
+    Directory name in which file is present
 ``%EXT%``
     File extension.
 ``%MAIL%``
@@ -94,5 +96,3 @@ The following variables will be expanded in templates:
 ``%HERE%``
     Expands to nothing, but ensures that the cursor will be placed in its
     position after expanding the template.
-
-
